@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C40A72E72409C98300FE85A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A72E62409C98300FE85A6 /* AppDelegate.swift */; };
+		C40A72E92409C98300FE85A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A72E82409C98300FE85A6 /* SceneDelegate.swift */; };
+		C40A72EB2409C98300FE85A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A72EA2409C98300FE85A6 /* ViewController.swift */; };
+		C40A72EE2409C98300FE85A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A72EC2409C98300FE85A6 /* Main.storyboard */; };
+		C40A72F02409C98600FE85A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40A72EF2409C98600FE85A6 /* Assets.xcassets */; };
+		C40A72F32409C98600FE85A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A72F12409C98600FE85A6 /* LaunchScreen.storyboard */; };
+		C40A72FE2409C98600FE85A6 /* KeyboardForWechatMomentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A72FD2409C98600FE85A6 /* KeyboardForWechatMomentsTests.swift */; };
+		C40A73092409C98600FE85A6 /* KeyboardForWechatMomentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A73082409C98600FE85A6 /* KeyboardForWechatMomentsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C40A72FA2409C98600FE85A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C40A72DB2409C98300FE85A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C40A72E22409C98300FE85A6;
+			remoteInfo = KeyboardForWechatMoments;
+		};
+		C40A73052409C98600FE85A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C40A72DB2409C98300FE85A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C40A72E22409C98300FE85A6;
+			remoteInfo = KeyboardForWechatMoments;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C40A72E32409C98300FE85A6 /* KeyboardForWechatMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardForWechatMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40A72E62409C98300FE85A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C40A72E82409C98300FE85A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C40A72EA2409C98300FE85A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C40A72ED2409C98300FE85A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C40A72EF2409C98600FE85A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C40A72F22409C98600FE85A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C40A72F42409C98600FE85A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C40A72F92409C98600FE85A6 /* KeyboardForWechatMomentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardForWechatMomentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40A72FD2409C98600FE85A6 /* KeyboardForWechatMomentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardForWechatMomentsTests.swift; sourceTree = "<group>"; };
+		C40A72FF2409C98600FE85A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C40A73042409C98600FE85A6 /* KeyboardForWechatMomentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardForWechatMomentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40A73082409C98600FE85A6 /* KeyboardForWechatMomentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardForWechatMomentsUITests.swift; sourceTree = "<group>"; };
+		C40A730A2409C98600FE85A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C40A72E02409C98300FE85A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40A72F62409C98600FE85A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40A73012409C98600FE85A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C40A72DA2409C98300FE85A6 = {
+			isa = PBXGroup;
+			children = (
+				C40A72E52409C98300FE85A6 /* KeyboardForWechatMoments */,
+				C40A72FC2409C98600FE85A6 /* KeyboardForWechatMomentsTests */,
+				C40A73072409C98600FE85A6 /* KeyboardForWechatMomentsUITests */,
+				C40A72E42409C98300FE85A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C40A72E42409C98300FE85A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C40A72E32409C98300FE85A6 /* KeyboardForWechatMoments.app */,
+				C40A72F92409C98600FE85A6 /* KeyboardForWechatMomentsTests.xctest */,
+				C40A73042409C98600FE85A6 /* KeyboardForWechatMomentsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C40A72E52409C98300FE85A6 /* KeyboardForWechatMoments */ = {
+			isa = PBXGroup;
+			children = (
+				C40A72E62409C98300FE85A6 /* AppDelegate.swift */,
+				C40A72E82409C98300FE85A6 /* SceneDelegate.swift */,
+				C40A72EA2409C98300FE85A6 /* ViewController.swift */,
+				C40A72EC2409C98300FE85A6 /* Main.storyboard */,
+				C40A72EF2409C98600FE85A6 /* Assets.xcassets */,
+				C40A72F12409C98600FE85A6 /* LaunchScreen.storyboard */,
+				C40A72F42409C98600FE85A6 /* Info.plist */,
+			);
+			path = KeyboardForWechatMoments;
+			sourceTree = "<group>";
+		};
+		C40A72FC2409C98600FE85A6 /* KeyboardForWechatMomentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C40A72FD2409C98600FE85A6 /* KeyboardForWechatMomentsTests.swift */,
+				C40A72FF2409C98600FE85A6 /* Info.plist */,
+			);
+			path = KeyboardForWechatMomentsTests;
+			sourceTree = "<group>";
+		};
+		C40A73072409C98600FE85A6 /* KeyboardForWechatMomentsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C40A73082409C98600FE85A6 /* KeyboardForWechatMomentsUITests.swift */,
+				C40A730A2409C98600FE85A6 /* Info.plist */,
+			);
+			path = KeyboardForWechatMomentsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C40A72E22409C98300FE85A6 /* KeyboardForWechatMoments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C40A730D2409C98600FE85A6 /* Build configuration list for PBXNativeTarget "KeyboardForWechatMoments" */;
+			buildPhases = (
+				C40A72DF2409C98300FE85A6 /* Sources */,
+				C40A72E02409C98300FE85A6 /* Frameworks */,
+				C40A72E12409C98300FE85A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardForWechatMoments;
+			productName = KeyboardForWechatMoments;
+			productReference = C40A72E32409C98300FE85A6 /* KeyboardForWechatMoments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C40A72F82409C98600FE85A6 /* KeyboardForWechatMomentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C40A73102409C98600FE85A6 /* Build configuration list for PBXNativeTarget "KeyboardForWechatMomentsTests" */;
+			buildPhases = (
+				C40A72F52409C98600FE85A6 /* Sources */,
+				C40A72F62409C98600FE85A6 /* Frameworks */,
+				C40A72F72409C98600FE85A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C40A72FB2409C98600FE85A6 /* PBXTargetDependency */,
+			);
+			name = KeyboardForWechatMomentsTests;
+			productName = KeyboardForWechatMomentsTests;
+			productReference = C40A72F92409C98600FE85A6 /* KeyboardForWechatMomentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C40A73032409C98600FE85A6 /* KeyboardForWechatMomentsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C40A73132409C98600FE85A6 /* Build configuration list for PBXNativeTarget "KeyboardForWechatMomentsUITests" */;
+			buildPhases = (
+				C40A73002409C98600FE85A6 /* Sources */,
+				C40A73012409C98600FE85A6 /* Frameworks */,
+				C40A73022409C98600FE85A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C40A73062409C98600FE85A6 /* PBXTargetDependency */,
+			);
+			name = KeyboardForWechatMomentsUITests;
+			productName = KeyboardForWechatMomentsUITests;
+			productReference = C40A73042409C98600FE85A6 /* KeyboardForWechatMomentsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C40A72DB2409C98300FE85A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jackie Wang";
+				TargetAttributes = {
+					C40A72E22409C98300FE85A6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C40A72F82409C98600FE85A6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C40A72E22409C98300FE85A6;
+					};
+					C40A73032409C98600FE85A6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C40A72E22409C98300FE85A6;
+					};
+				};
+			};
+			buildConfigurationList = C40A72DE2409C98300FE85A6 /* Build configuration list for PBXProject "KeyboardForWechatMoments" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C40A72DA2409C98300FE85A6;
+			productRefGroup = C40A72E42409C98300FE85A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C40A72E22409C98300FE85A6 /* KeyboardForWechatMoments */,
+				C40A72F82409C98600FE85A6 /* KeyboardForWechatMomentsTests */,
+				C40A73032409C98600FE85A6 /* KeyboardForWechatMomentsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C40A72E12409C98300FE85A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40A72F32409C98600FE85A6 /* LaunchScreen.storyboard in Resources */,
+				C40A72F02409C98600FE85A6 /* Assets.xcassets in Resources */,
+				C40A72EE2409C98300FE85A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40A72F72409C98600FE85A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40A73022409C98600FE85A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C40A72DF2409C98300FE85A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40A72EB2409C98300FE85A6 /* ViewController.swift in Sources */,
+				C40A72E72409C98300FE85A6 /* AppDelegate.swift in Sources */,
+				C40A72E92409C98300FE85A6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40A72F52409C98600FE85A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40A72FE2409C98600FE85A6 /* KeyboardForWechatMomentsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C40A73002409C98600FE85A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40A73092409C98600FE85A6 /* KeyboardForWechatMomentsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C40A72FB2409C98600FE85A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C40A72E22409C98300FE85A6 /* KeyboardForWechatMoments */;
+			targetProxy = C40A72FA2409C98600FE85A6 /* PBXContainerItemProxy */;
+		};
+		C40A73062409C98600FE85A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C40A72E22409C98300FE85A6 /* KeyboardForWechatMoments */;
+			targetProxy = C40A73052409C98600FE85A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C40A72EC2409C98300FE85A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C40A72ED2409C98300FE85A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C40A72F12409C98600FE85A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C40A72F22409C98600FE85A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C40A730B2409C98600FE85A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C40A730C2409C98600FE85A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C40A730E2409C98600FE85A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 274245Q59F;
+				INFOPLIST_FILE = KeyboardForWechatMoments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jackie.KeyboardForWechatMoments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C40A730F2409C98600FE85A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 274245Q59F;
+				INFOPLIST_FILE = KeyboardForWechatMoments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jackie.KeyboardForWechatMoments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C40A73112409C98600FE85A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 274245Q59F;
+				INFOPLIST_FILE = KeyboardForWechatMomentsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jackie.KeyboardForWechatMomentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyboardForWechatMoments.app/KeyboardForWechatMoments";
+			};
+			name = Debug;
+		};
+		C40A73122409C98600FE85A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 274245Q59F;
+				INFOPLIST_FILE = KeyboardForWechatMomentsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jackie.KeyboardForWechatMomentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyboardForWechatMoments.app/KeyboardForWechatMoments";
+			};
+			name = Release;
+		};
+		C40A73142409C98600FE85A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 274245Q59F;
+				INFOPLIST_FILE = KeyboardForWechatMomentsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jackie.KeyboardForWechatMomentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeyboardForWechatMoments;
+			};
+			name = Debug;
+		};
+		C40A73152409C98600FE85A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 274245Q59F;
+				INFOPLIST_FILE = KeyboardForWechatMomentsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jackie.KeyboardForWechatMomentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeyboardForWechatMoments;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C40A72DE2409C98300FE85A6 /* Build configuration list for PBXProject "KeyboardForWechatMoments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40A730B2409C98600FE85A6 /* Debug */,
+				C40A730C2409C98600FE85A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C40A730D2409C98600FE85A6 /* Build configuration list for PBXNativeTarget "KeyboardForWechatMoments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40A730E2409C98600FE85A6 /* Debug */,
+				C40A730F2409C98600FE85A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C40A73102409C98600FE85A6 /* Build configuration list for PBXNativeTarget "KeyboardForWechatMomentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40A73112409C98600FE85A6 /* Debug */,
+				C40A73122409C98600FE85A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C40A73132409C98600FE85A6 /* Build configuration list for PBXNativeTarget "KeyboardForWechatMomentsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40A73142409C98600FE85A6 /* Debug */,
+				C40A73152409C98600FE85A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C40A72DB2409C98300FE85A6 /* Project object */;
+}
