@@ -28,6 +28,7 @@ class KeyboardViewController: UIInputViewController {
         guard let inputView = inputView else { return }
         keyboardView.delegate = self
         inputView.addSubview(keyboardView)
+        keyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
         keyboardView.fillSuperView()
         NSLayoutConstraint.activate([
             keyboardView.topAnchor.constraint(equalTo: inputView.topAnchor),
@@ -38,13 +39,63 @@ class KeyboardViewController: UIInputViewController {
         keyboardView.setNextKeyboardVisible(needsInputModeSwitchKey)
     }
     
-    fileprivate func setupText() {
-        let chars = "Test"
-        keyboardView.textView.text = chars
-        text = chars
+    override var hasFullAccess: Bool
+    {
+        if #available(iOS 11.0, *){
+            return super.hasFullAccess// super is UIInputViewController.
+        }
+        
+        if #available(iOSApplicationExtension 10.0, *){
+            if UIPasteboard.general.hasStrings{
+                return  true
+            }
+            else if UIPasteboard.general.hasURLs{
+                return true
+            }
+            else if UIPasteboard.general.hasColors{
+                return true
+            }
+            else if UIPasteboard.general.hasImages{
+                return true
+            }
+            else  // In case the pasteboard is blank
+            {
+                UIPasteboard.general.string = ""
+                
+                if UIPasteboard.general.hasStrings{
+                    return  true
+                }else{
+                    return  false
+                }
+            }
+        } else{
+            // before iOS10
+            return UIPasteboard.general.isKind(of: UIPasteboard.self)
+        }
     }
     
+    override func textDidChange(_ textInput: UITextInput?) {
+       let colorScheme: ColorScheme
+      if textDocumentProxy.keyboardAppearance == .dark {
+        colorScheme = .dark
+      } else {
+        colorScheme = .light
+      }
+      keyboardView.setColorScheme(colorScheme)
+    }
     
+    fileprivate func setupText() {
+        let defaultString = "Please copy the text first, then come here to input."
+        let pasteboard = UIPasteboard.general
+        if let chars = pasteboard.string {
+            keyboardView.textView.text = chars
+            text = chars
+        } else {
+            keyboardView.textView.text = defaultString
+            text = defaultString
+        }
+        
+    }
 }
 
 extension KeyboardViewController: KeyboardViewDelegate {
@@ -54,7 +105,7 @@ extension KeyboardViewController: KeyboardViewDelegate {
     }
     
     func deleteCharacterBeforeCursor() {
-      textDocumentProxy.deleteBackward()
+        textDocumentProxy.deleteBackward()
     }
     
     @objc fileprivate func handleInsert() {

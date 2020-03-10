@@ -14,34 +14,33 @@ protocol KeyboardViewDelegate: class {
 }
 
 class KeyboardView: UIView {
-
+    
     // UI elements
-    fileprivate var deleteButton: UIButton = {
-        let button = UIButton()
+    fileprivate var deleteButton: KeyButton = {
+        let button = KeyButton()
         button.setTitle("delete", for: .normal)
         button.addTarget(self, action: #selector(handleDelete), for: .touchDown)
         button.heightAnchor.constraint(equalToConstant: 35).isActive = true
         return button
     }()
     
-    fileprivate var nextKeyboardButton: UIButton = {
-        let button = UIButton()
+    var nextKeyboardButton: KeyButton = {
+        let button = KeyButton()
         button.setTitle("next", for: .normal)
-        button.addTarget(self, action: #selector(handleNextKeyboard), for: .touchUpInside)
         button.heightAnchor.constraint(equalToConstant: 35).isActive = true
         return button
     }()
     
-    fileprivate var doneButton: UIButton = {
-        let button = UIButton()
+    fileprivate var doneButton: KeyButton = {
+        let button = KeyButton()
         button.setTitle("done", for: .normal)
         button.addTarget(self, action: #selector(handleDone), for: .touchUpInside)
         button.heightAnchor.constraint(equalToConstant: 35).isActive = true
         return button
     }()
     
-    fileprivate var inputButton: UIButton = {
-        let button = UIButton()
+    fileprivate var inputButton: KeyButton = {
+        let button = KeyButton()
         button.setTitle("input", for: .normal)
         button.addTarget(self, action: #selector(handleInput), for: .touchUpInside)
         button.heightAnchor.constraint(equalToConstant: 55).isActive = true
@@ -86,7 +85,6 @@ class KeyboardView: UIView {
         textView.textAlignment = .left
         textView.isUserInteractionEnabled = false
         
-        textView.backgroundColor = .purple
         textView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             textView.topAnchor.constraint(equalTo: topAnchor, constant: 15),
@@ -107,6 +105,23 @@ class KeyboardView: UIView {
         deleteButton.isEnabled = isEnable
     }
     
+    func setColorScheme(_ colorScheme: ColorScheme) {
+        let colorScheme = Colors(colorScheme: colorScheme)
+        backgroundColor = colorScheme.backgroundColor
+        
+        for view in subviews {
+            if let button = view as? KeyButton {
+                button.setTitleColor(colorScheme.buttonTextColor, for: [])
+                button.tintColor = colorScheme.buttonTextColor
+                
+                button.defaultBackgroundColor = colorScheme.buttonHighlightColor
+                button.highlightBackgroundColor = colorScheme.buttonBackgroundColor
+            } else if let textview = view as? UITextView {
+                textview.backgroundColor = colorScheme.buttonHighlightColor
+            }
+        }
+    }
+    
 }
 
 // MARK: - Actions
@@ -114,10 +129,6 @@ extension KeyboardView {
     
     @objc fileprivate func handleDelete() {
         delegate?.deleteCharacterBeforeCursor()
-    }
-    
-    @objc fileprivate func handleNextKeyboard() {
-        print("Next Keyboard")
     }
     
     @objc fileprivate func handleDone() {

@@ -12,7 +12,6 @@
 		C402A474240A84CE00244452 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C402A473240A84CE00244452 /* UIView+Extension.swift */; };
 		C402A475240A84CE00244452 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C402A473240A84CE00244452 /* UIView+Extension.swift */; };
 		C40A72E72409C98300FE85A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A72E62409C98300FE85A6 /* AppDelegate.swift */; };
-		C40A72E92409C98300FE85A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A72E82409C98300FE85A6 /* SceneDelegate.swift */; };
 		C40A72EB2409C98300FE85A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A72EA2409C98300FE85A6 /* ViewController.swift */; };
 		C40A72EE2409C98300FE85A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A72EC2409C98300FE85A6 /* Main.storyboard */; };
 		C40A72F02409C98600FE85A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40A72EF2409C98600FE85A6 /* Assets.xcassets */; };
@@ -21,6 +20,10 @@
 		C40A73092409C98600FE85A6 /* KeyboardForWechatMomentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A73082409C98600FE85A6 /* KeyboardForWechatMomentsUITests.swift */; };
 		C40A731D2409D13000FE85A6 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A731C2409D13000FE85A6 /* KeyboardViewController.swift */; };
 		C40A73212409D13000FE85A6 /* UnfoldKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C40A731A2409D13000FE85A6 /* UnfoldKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C42890862417C20F00AD5F2B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42890852417C20F00AD5F2B /* Colors.swift */; };
+		C42890872417C20F00AD5F2B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42890852417C20F00AD5F2B /* Colors.swift */; };
+		C42890892418473800AD5F2B /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42890882418473800AD5F2B /* KeyButton.swift */; };
+		C428908A2418473800AD5F2B /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42890882418473800AD5F2B /* KeyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +69,6 @@
 		C402A473240A84CE00244452 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C40A72E32409C98300FE85A6 /* KeyboardForWechatMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardForWechatMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40A72E62409C98300FE85A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C40A72E82409C98300FE85A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C40A72EA2409C98300FE85A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C40A72ED2409C98300FE85A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C40A72EF2409C98600FE85A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +83,8 @@
 		C40A731A2409D13000FE85A6 /* UnfoldKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UnfoldKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40A731C2409D13000FE85A6 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		C40A731E2409D13000FE85A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42890852417C20F00AD5F2B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C42890882418473800AD5F2B /* KeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				C402A46F240A82F400244452 /* KeyboardView.swift */,
+				C42890882418473800AD5F2B /* KeyButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,10 +161,10 @@
 		C40A72E52409C98300FE85A6 /* KeyboardForWechatMoments */ = {
 			isa = PBXGroup;
 			children = (
+				C42890842417C20200AD5F2B /* Data */,
 				C402A472240A849D00244452 /* Tools */,
 				C402A46E240A81E200244452 /* Views */,
 				C40A72E62409C98300FE85A6 /* AppDelegate.swift */,
-				C40A72E82409C98300FE85A6 /* SceneDelegate.swift */,
 				C40A72EA2409C98300FE85A6 /* ViewController.swift */,
 				C40A72EC2409C98300FE85A6 /* Main.storyboard */,
 				C40A72EF2409C98600FE85A6 /* Assets.xcassets */,
@@ -194,6 +199,14 @@
 				C40A731E2409D13000FE85A6 /* Info.plist */,
 			);
 			path = UnfoldKeyboard;
+			sourceTree = "<group>";
+		};
+		C42890842417C20200AD5F2B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C42890852417C20F00AD5F2B /* Colors.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,11 +370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42890862417C20F00AD5F2B /* Colors.swift in Sources */,
 				C40A72EB2409C98300FE85A6 /* ViewController.swift in Sources */,
 				C402A470240A82F400244452 /* KeyboardView.swift in Sources */,
+				C42890892418473800AD5F2B /* KeyButton.swift in Sources */,
 				C40A72E72409C98300FE85A6 /* AppDelegate.swift in Sources */,
 				C402A474240A84CE00244452 /* UIView+Extension.swift in Sources */,
-				C40A72E92409C98300FE85A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,8 +400,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C402A475240A84CE00244452 /* UIView+Extension.swift in Sources */,
+				C42890872417C20F00AD5F2B /* Colors.swift in Sources */,
 				C40A731D2409D13000FE85A6 /* KeyboardViewController.swift in Sources */,
 				C402A471240A82F400244452 /* KeyboardView.swift in Sources */,
+				C428908A2418473800AD5F2B /* KeyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
